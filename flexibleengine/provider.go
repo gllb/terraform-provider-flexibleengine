@@ -184,6 +184,7 @@ func Provider() *schema.Provider {
 			"flexibleengine_blockstorage_volume_v2":             dataSourceBlockStorageVolumeV2(),
 			"flexibleengine_compute_availability_zones_v2":      dataSourceComputeAvailabilityZonesV2(),
 			"flexibleengine_compute_instance_v2":                dataSourceComputeInstance(),
+			"flexibleengine_compute_instances":                  dataSourceComputeInstances(),
 			"flexibleengine_compute_flavors_v2":                 dataSourceEcsFlavors(),
 			"flexibleengine_images_image_v2":                    dataSourceImagesImageV2(),
 			"flexibleengine_networking_network_v2":              dataSourceNetworkingNetworkV2(),
@@ -213,7 +214,6 @@ func Provider() *schema.Provider {
 			"flexibleengine_vbs_backup_policy_v2":               dataSourceVBSBackupPolicyV2(),
 			"flexibleengine_vbs_backup_v2":                      dataSourceVBSBackupV2(),
 			"flexibleengine_cts_tracker_v1":                     dataSourceCTSTrackerV1(),
-			"flexibleengine_dcs_az_v1":                          dataSourceDcsAZV1(),
 			"flexibleengine_dcs_maintainwindow_v1":              dataSourceDcsMaintainWindowV1(),
 			"flexibleengine_dcs_product_v1":                     dataSourceDcsProductV1(),
 			"flexibleengine_cce_node_v3":                        dataSourceCceNodesV3(),
@@ -232,6 +232,7 @@ func Provider() *schema.Provider {
 			"flexibleengine_vpcep_endpoints":                    dataSourceVPCEPEndpoints(),
 
 			// Deprecated data source
+			"flexibleengine_dcs_az_v1":      dataSourceDcsAZV1(),
 			"flexibleengine_dds_flavor_v3":  dataSourceDDSFlavorV3(),
 			"flexibleengine_rds_flavors_v1": dataSourceRdsFlavorV1(),
 		},
